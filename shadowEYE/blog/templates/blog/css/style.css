@@ -1,0 +1,63 @@
+* {
+	background-color: black;
+	font-family: 'Yatra One';
+	color: #D7D7E8;
+}
+
+.bubbles_normal li {
+	word-wrap: normal;
+	list-style-type: none;
+    content: '';
+    display: inline-block;
+    height: 9em;
+    width: 9em;
+    background-image: url('../images/Bubble normal 300.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 18;
+    text-align: center;
+    line-height: 9em;
+    text-shadow: 0.1em 0.1em #424242;
+    list-style-position: inside;
+}
+
+.user-switch {
+	position: absolute;
+	background-image: url('../images/peace normal 300 copy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 7em;
+    height: 7em;
+}
+
+footer {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*tabs*/
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color:inherit;
+}
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+div.tab button.active {
+    background-color: #333;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
