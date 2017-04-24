@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <nav>
-	<ul class="nav nav-tabs">
-		<li class="active"><a data-toggle="tab" href="#bubbles">Bubbles</a></li>
-  		<li><a data-toggle="tab" href="#leaves">Leaves</a></li>
-  		<li><a data-toggle="tab" href="#chess">Auto Chess</a></li>
-    </ul>
+	<div class="tab">
+  		<button class="tablinks" onclick="openTab(event, 'bubbles')">Bubbles</button>
+		<button class="tablinks" onclick="openTab(event, 'leaves')">Leaves</button>
+		<button class="tablinks" onclick="openTab(event, 'chess')">Auto-Chess</button>
+	</div>
 </nav>
 
 <body>
 
-	<div class="tab-content">
+	<div id='bubbles' class="tabcontent">
 		<articleid id="bubbles" class="tab-pane fade">
 			<h3>A Bubble's Quiver</h3><br/>
 			<p>Begins with what’s seen</p><br/>
@@ -34,7 +34,7 @@
 		</section>
 	</div>
 
-	<div class="tab-content">
+	<div id='leaves' class="tabcontent">
 		<article id="leaves" class="tab-pane fade">
 			<h3>The Written Leaves</h3><br/>
 			<p>From page to page,</p><br/>
@@ -48,10 +48,10 @@
 		<section>
 	</div>
 
-	<div class="tab-content">
+	<div id='chess' class="tabcontent">
 		<article id="chess" class="tab-pane fade">
 		</article>
-		<section class="leaves_list">
+		<section class="chess_board">
 		<section>
 	</div>
 
