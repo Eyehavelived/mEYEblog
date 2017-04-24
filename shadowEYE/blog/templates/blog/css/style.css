@@ -20,6 +20,7 @@
     line-height: 9em;
     text-shadow: 0.1em 0.1em #424242;
     list-style-position: inside;
+    text-indent: 0;
 }
 
 .user-switch {
@@ -35,6 +36,11 @@ footer {
 	text-align: center;
 	margin: 0 auto;
 	padding: 0;
+}
+
+body div {
+	text-align: center;
+	line-height: 0;
 }
 
 /*tabs*/
@@ -55,7 +61,7 @@ div.tab button {
 div.tab button.active {
     background-color: #333;
 }
-.tabcontent {
+.tab-content {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;

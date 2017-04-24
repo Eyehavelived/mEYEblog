@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <nav>
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Bubbles')">Bubbles</button>
-        <button class="tablinks" onclick="openTab(event, 'Leaves')">Leaves</button>
-        <button class="tablinks" onclick="openTab(event, 'AutoChess')">Auto-Chess</button>
-    </div>
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#bubbles">Bubbles</a></li>
+  		<li><a data-toggle="tab" href="#leaves">Leaves</a></li>
+  		<li><a data-toggle="tab" href="#chess">Auto Chess</a></li>
+    </ul>
 </nav>
 
 <body>
 
-	<div id="Bubbles" class="tabcontent">
-		<article>
-			<h3>A Bubble's Quiver</h3>
+	<div class="tab-content">
+		<articleid id="bubbles" class="tab-pane fade">
+			<h3>A Bubble's Quiver</h3><br/>
 			<p>Begins with what’s seen</p><br/>
         	<p>to become what will have been</p><br/>
 			<p>It is deemed immaterial until not</p><br/>
@@ -26,17 +26,17 @@
 			<p>Fragile while inflating, it can easily burst</p><br/>
 			<p>But until then, a bubble can never do its worst</p><br/>
 		</article>
-		<section class="bubbles">
+		<section class="bubbles_list">
 			<ul class="bubbles_normal">
-				<li>Bubble Title Here</li><br/>
-				<li>Bubble Title Here</li>
+				<li>Bubble Title</li><br/>
+				<li>Bubble Title</li>
 			</ul>
 		</section>
 	</div>
 
-	<div id="Leaves" class="tabcontent">
-		<article>
-			<h3>The Written Leaves</h3>
+	<div class="tab-content">
+		<article id="leaves" class="tab-pane fade">
+			<h3>The Written Leaves</h3><br/>
 			<p>From page to page,</p><br/>
 			<p>From joy to rage,</p><br/>
 			<p>The voice as you read is heard.</p><br/>
@@ -44,17 +44,24 @@
 			<p>And poetic seers,</p><br/>
 			<p>On the leaves you can find their words.</p><br/>
 		</article>
-		<section class="leaves">
+		<section class="leaves_list">
 		<section>
 	</div>
-<p></p>
+
+	<div class="tab-content">
+		<article id="chess" class="tab-pane fade">
+		</article>
+		<section class="leaves_list">
+		<section>
+	</div>
 
 </body>
 
 <footer>
-<button type="button" class="user-switch" margin="50%"></button>
+<button Id="peace" type="button" class="user-switch" margin="50%"></button>
 </footer>
 
-<script src="/scripts/tabs.js"></script>
+<script src="./scripts/tabs.js"></script>
+<script src="./scripts/peace-switch.js"></script>
 
 </html>
