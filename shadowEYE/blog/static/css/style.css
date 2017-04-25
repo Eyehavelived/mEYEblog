@@ -24,12 +24,6 @@
 }
 
 .user-switch {
-	position: absolute;
-	background-image: url('../images/peace normal 300 copy.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 7em;
-    height: 7em;
 }
 
 footer {

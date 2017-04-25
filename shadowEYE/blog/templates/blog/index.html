@@ -3,8 +3,9 @@
 	<meta charset="utf-8">
 	<title>Polymathy</title>
     <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/reset.css" %}">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <nav>
 	<div class="tab">
@@ -58,10 +59,14 @@
 </body>
 
 <footer>
-<button Id="peace" type="button" class="user-switch" margin="50%"></button>
+<button Id="peace" type="button" class="user-switch" margin="50%"> 
+{% load static %}
+<img src="{% static 'images/peace-normal-300.png' %}" alt="My image" height="90" width="90"/>
+</button>
 </footer>
 
-<script src="./scripts/tabs.js"></script>
-<script src="./scripts/peace-switch.js"></script>
+{% load static %}
+<script src="{% static "scripts/tabs.js" %}"></script>
+<script src="{% static "scripts/peace-switch.js" %}"></script>
 
 </html>
