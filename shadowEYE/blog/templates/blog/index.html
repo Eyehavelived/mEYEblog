@@ -1,72 +1,94 @@
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Polymathy</title>
-    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
-    {% load static %}
-    <link rel="stylesheet" href="{% static "css/reset.css" %}">
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
-</head>
-<nav>
-	<div class="tab">
-  		<button class="tablinks" onclick="openTab(event, 'bubbles')">Bubbles</button>
-		<button class="tablinks" onclick="openTab(event, 'leaves')">Leaves</button>
-		<button class="tablinks" onclick="openTab(event, 'chess')">Auto-Chess</button>
-	</div>
-</nav>
+	<head>
+		<meta charset="utf-8">
+		<title>Polymathy</title>
+		<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+		{% load static %}
+		<link rel="stylesheet" href="{% static "css/reset.css" %}">
+		<link rel="stylesheet" href="{% static "css/style.css" %}">
+	</head>
+	<nav>
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'bubbles')">Bubbles</button>
+			<button class="tablinks" onclick="openTab(event, 'leaves')">Leaves</button>
+			<button class="tablinks" onclick="openTab(event, 'chess')">Auto-Chess</button>
+		</div>
+	</nav>
 
-<body>
+	<body>
+		<div id='bubbles' class="tabcontent">
+			<article id="bubbles_poem" class="tab-pane">
+				<h3>A Bubble's Quiver</h3><br/>
+				<p>Begins with what’s seen</p><br/>
+				<p>to become what will have been</p><br/>
+				<p>It is deemed immaterial until not</p><br/>
+				<p>Yet if not kept one would forgot</p><br/>
+				<p>Fragile while inflating, it can easily burst</p><br/>
+				<p>But until then, a bubble can never do its worst</p><br/>
+			</article>
+			<table class="bubbles_normal">
+				<tr>
+					<th>Bubble Title</th><br/>
+					<th>Bubble Title</th><br/>
 
-	<div id='bubbles' class="tabcontent">
-		<articleid id="bubbles" class="tab-pane fade">
-			<h3>A Bubble's Quiver</h3><br/>
-			<p>Begins with what’s seen</p><br/>
-        	<p>to become what will have been</p><br/>
-			<p>It is deemed immaterial until not</p><br/>
-			<p>Yet if not kept one would forgot</p><br/>
-			<p>Fragile while inflating, it can easily burst</p><br/>
-			<p>But until then, a bubble can never do its worst</p><br/>
-		</article>
-		<section class="bubbles_list">
-			<ul class="bubbles_normal">
-				<li>Bubble Title</li><br/>
-				<li>Bubble Title</li>
-			</ul>
-		</section>
-	</div>
+				</tr>
+				<tr>
+					<th>Bubble Title</th><br/>
+					<th>Bubble Title</th><br/>
+					<th>Bubble Title</th><br/>
+					<th>Bubble Title</th><br/>
+				</tr>
+			</table>
+			<table class="bubbles_red" style="display: none;">
+				<tr>
+					<th><img src="{% static 'images/Bubble normal 300.png' %}" alt="My image" height="90" width="90"/>Bubble Title</th><br/>
+					<th><img src="{% static 'images/Bubble normal 300.png' %}" alt="My image" height="90" width="90"/>Bubble Title</th><br/>
+					<th><img src="{% static 'images/Bubble normal 300.png' %}" alt="My image" height="90" width="90"/>Bubble Title</th><br/>
+					<th><img src="{% static 'images/Bubble normal 300.png' %}" alt="My image" height="90" width="90"/>Bubble Title</th><br/>
+					<th><img src="{% static 'images/Bubble normal 300.png' %}" alt="My image" height="90" width="90"/>Bubble Title</th><br/>
+				</tr>
+				<tr>
+					<th><img src="{% static 'images/Bubble normal 300.png' %}" alt="My image" height="90" width="90"/>Bubble Title</th><br/>
+					<th><img src="{% static 'images/Bubble normal 300.png' %}" alt="My image" height="90" width="90"/>Bubble Title</th><br/>
+					<th><img src="{% static 'images/Bubble normal 300.png' %}" alt="My image" height="90" width="90"/>Bubble Title</th><br/>
+					<th><img src="{% static 'images/Bubble normal 300.png' %}" alt="My image" height="90" width="90"/>Bubble Title</th><br/>
+				</tr>
+			</table>
+		</div>
 
-	<div id='leaves' class="tabcontent">
-		<article id="leaves" class="tab-pane fade">
-			<h3>The Written Leaves</h3><br/>
-			<p>From page to page,</p><br/>
-			<p>From joy to rage,</p><br/>
-			<p>The voice as you read is heard.</p><br/>
-			<p>But with ideas,</p><br/>
-			<p>And poetic seers,</p><br/>
-			<p>On the leaves you can find their words.</p><br/>
-		</article>
-		<section class="leaves_list">
-		<section>
-	</div>
+		<div id='leaves' class="tabcontent" style="overflow: scroll; height:400px;">
+			<article id="leaves_poem" class="tab-pane">
+				<h3>The Written Leaves</h3><br/>
+				<p>From page to page,</p><br/>
+				<p>From joy to rage,</p><br/>
+				<p>The voice as you read is heard.</p><br/>
+				<p>But with ideas,</p><br/>
+				<p>And poetic seers,</p><br/>
+				<p>On the leaves you can find their words.</p><br/>
+			</article>
+			<section class="leaves_list">
+			<section>
+		</div>
 
-	<div id='chess' class="tabcontent">
-		<article id="chess" class="tab-pane fade">
-		</article>
-		<section class="chess_board">
-		<section>
-	</div>
+		<div id='chess' class="tabcontent" style="overflow: scroll; height:400px;">
+			<article id="chess_set" class="tab-pane">
+			</article>
+			<section class="chess_board">
+			<section>
+		</div>
 
-</body>
+	</body>
 
-<footer>
-<button Id="peace" type="button" class="user-switch" margin="50%"> 
-{% load static %}
-<img src="{% static 'images/peace-normal-300.png' %}" alt="My image" height="90" width="90"/>
-</button>
-</footer>
+	<footer>
+		<button Id="peace" type="button" class="user-switch" margin="50%">
+			{% load static %}
+			<img src="{% static 'images/peace-normal-300.png' %}" alt="My image" height="90" width="90"/>
+		</button>
+	</footer>
 
-{% load static %}
-<script src="{% static "scripts/tabs.js" %}"></script>
-<script src="{% static "scripts/peace-switch.js" %}"></script>
+	{% load static %}
+	<script src="{% static "scripts/tabs.js" %}"></script>
+	<script src="{% static "scripts/peace-switch.js" %}"></script>
+	<script src="{% static "scripts/fadeaway.js" %}"></script>
 
 </html>

@@ -1,35 +1,32 @@
+{% load static %}
+
 * {
 	background-color: black;
 	font-family: 'Yatra One';
 	color: #D7D7E8;
 }
 
-.bubbles_normal li {
-	word-wrap: normal;
-	list-style-type: none;
-    content: '';
-    display: inline-block;
-    height: 9em;
-    width: 9em;
-    background-image: url('../images/Bubble normal 300.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-size: 18;
-    text-align: center;
-    line-height: 9em;
-    text-shadow: 0.1em 0.1em #424242;
-    list-style-position: inside;
-    text-indent: 0;
-}
+.bubbles_normal tr th {
+    background-image: url('../images/Bubble normal 300.png')
+    width: 175px;
+    height: 175px;
 
-.user-switch {
+
 }
 
 footer {
+    position: fixed;
 	text-align: center;
 	margin: 0 auto;
 	padding: 0;
+	bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+}
+
+footer button {
+    button: none;
 }
 
 body div {
@@ -38,26 +35,43 @@ body div {
 }
 
 /*tabs*/
+nav {
+    position: fixed;
+}
+
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color:inherit;
+    height: 3em;
 }
 div.tab button {
-    background-color: inherit;
-    float: left;
+    background-color: transition;
+    font-size: 1.5em;
+    float: center;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 1em 1.6em;
     transition: 0.3s;
 }
 div.tab button.active {
     background-color: #333;
 }
-.tab-content {
+.tabcontent {
+    overflow: scroll;
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
+    padding-top: 50px;
+    border: none;
     border-top: none;
+}
+
+/*fadeaway*/
+.tab-pane:after {
+    content:'';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20px;
+    right: 0;
 }
